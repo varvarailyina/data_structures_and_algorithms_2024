@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="description" content="My home page, on which I showcase my academic and professional background">
+    <meta name="keywords" content="personal home page">
+    <style>
+        body {
+            text-align: center;
+            font-family: helevtica, sans-serif;
+            background-color: #000000;
+        }
+        h1, h2 {
+            font-family: helevtica, sans-serif;
+        }
+        h1 {
+            color: #f6c5b2;
+            font-size: x-large;
+        }
+        h2 {
+            color: #9c7d71;
+            font-size: larger;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .text-block {
+            font-size: 15px;
+            font-weight: 115;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #9c7d71;
+            padding: 20px;
+            display: inline-block;
+            text-align: justify;
+            max-width: 85%;
+            color: #f6c5b2;
+        }
+        .link {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            color: #9c7d71;
+} </style>
+</head>
+<body>
+    {% if about_heading %}
+        <h1>{{ about_heading }}</h1>
+        {% if about_subtitle %}
+            <h2>{{ about_subtitle }}</h2>
+        {% endif %}
+    {% else %}
+        <h1>Home Page</h1>
+    {% endif %}
+    <img src="{{url_for('static', filename='varv_UN.jpg')}}" style="width: 100%; max-width: 400px; height: auto;" align = "middle" />
+    </div>
+    <div class = "text-block">
+        As a child of first-generation Russian immigrants, I spoke exclusively Russian in my home and became accustomed to Russian culture and traditions. On the other hand, I was brought up in the United States, having lived in various places across America for 15 years. Being raised in parallel worlds with knowledge of both Russian and American cultures inspired me to continue to venture out of my comfort zone. As a recipient of a scholarship for the Congress Bundestag Youth Exchange program, I spent my senior year of high school living with a host family and attending school in Germany. After graduation, I moved to Morocco and attended intensive Arabic courses for eight months in the city of Rabat.  With the ultimate goal of becoming a diplomat and working at the United Nations, I proceeded to study Social Sciences at the Humboldt University in Berlin. Thankfully, I ventured away from my desire to become a diplomat and became passionate about quantitative political science. With my master's degree in Data Science, I am on track to further my language skills beyond English, Russian, German, Arabic and French, to also include R and Python!
+</div>
+    <div class = "link">
+        To learn more about my academic and professional achievements, click <a href="https://www.linkedin.com/in/ilyina/">here</a> to connect with me on LinkedIn or <a
+href="mailto:varvara.ilyina@gmail.com">email</a> me with any questions!
+    </div>
+</body>
+</html>
